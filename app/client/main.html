@@ -1,0 +1,65 @@
+<head>
+  <title>app</title>
+</head>
+
+<body>
+  {{> digitalClock}}
+  {{> weather}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="info">
+  <h2>Learn Meteor!</h2>
+  <ul>
+    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+  </ul>
+</template>
+
+<template name="clock">
+  <div id="clockbox" style="font:14pt Arial; color:#FF0000;"></div>
+</template>
+
+<template name="digitalClock">
+  <div class="clockbox">
+    <div class="inside">
+      <div class="content">
+        <p class='days'>
+          <span id="sun">SUN</span>&nbsp;&nbsp;
+          <span id="mon">MON</span>&nbsp;&nbsp;
+          <span id="tus">TUS</span>&nbsp;&nbsp;
+          <span id="wed">WED</span>&nbsp;&nbsp;
+          <span id="thu">THU</span>&nbsp;&nbsp;
+          <span id="fri">FRI</span>&nbsp;&nbsp;
+          <span id="sat">SAT</span>
+        </p>
+        <p class='text'>
+          <span id='hours'></span> : 
+          <span id='min'></span> : 
+          <span id='sec'></span>&nbsp;&nbsp;
+          <span id='time'></span>
+        </p>
+        <p id=date>
+          <span id='day'></span>
+          <span id='month'></span>
+          <span id='year'></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="weather">
+  <div class="weatherbox">
+      <span id="temp">70</span>
+      <span id="degreeSymbol">°</span>
+      <i id="icon" class="wi wi-day-sunny"></i>
+      <span id="coverage">Sunny</span>    
+  </div>
+</template>

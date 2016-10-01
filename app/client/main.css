@@ -1,0 +1,115 @@
+/* CSS declarations go here */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #333333;
+}
+
+.clockbox {
+    position: absolute;
+    margin: auto;
+    right: 30px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Quicksand', 'Helvetica', Arial, sans-serif;
+}
+
+
+.weatherbox {
+    position: absolute;
+    margin: auto;
+    top: 15px;
+    left: 30px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Quicksand', 'Helvetica', Arial, sans-serif;
+}
+
+
+
+.content {
+    margin-top: 40px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.days {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.days span {
+    margin-left: 10px;
+}
+
+.text{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    left: 0;
+    margin-top: 100px;
+    font-size: 3.5em;
+}
+
+#time {
+    font-size: 1.5rem;
+}
+
+#date {
+    margin-top: 0px;
+    margin-left: 160px;
+}
+
+
+span#day {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+span#month {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 35px;
+
+}
+
+span#year {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 75px;
+
+}
+
+#temp {
+		font-size: 4rem;
+		display: inline-block;
+		position: relative;
+		text-align: center;
+        color: #fff;
+        font-family: 'Quicksand', 'Helvetica', Arial, sans-serif;
+}
+
+#icon {
+	margin: 20px 0 5px 2px;
+	font-size: 3.3rem;
+	color: #fff;
+}
+
+#coverage {
+	font-size: 2rem;
+	color: #fff;
+	font-family: 'Quicksand', 'Helvetica', Arial, sans-serif;
+}
+
+#degreeSymbol {
+	font-size: 4rem;
+	color: #fff;
+	font-family: 'Quicksand', 'Helvetica', Arial, sans-serif;
+}
